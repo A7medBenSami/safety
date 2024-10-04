@@ -219,25 +219,25 @@
                 </button>
                 <!-- 'Services' sub-menu, show/hide based on menu state. -->
                 <div class="mt-2 space-y-2 hidden" id="disclosure-1">
-                  <a href="services.html"
+                  <a href="{{route('frontservices')}}"
                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Fire fighting systems installations</a>
-                  <a href="services.html"
+                  <a href="{{route('frontservices')}}"
                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Fire fighting systems design</a>
-                  <a href="services.html"
+                  <a href="{{route('frontservices')}}"
                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Maintenance and Inspection</a>
-                  <a href="services.html"
+                  <a href="{{route('frontservices')}}"
                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Fire Fighting Equipment Supplies</a>
                   <a href="#"
                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Training & Systems Operation</a>
                 </div>
               </div>
-              <a href="projects.html"
+              <a href="{{route('frontprojects')}}"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
-              <a href="systems.html"
+              <a href="{{route('frontsystems')}}"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Systems</a>
             </div>
             <div class="py-6">
-              <a href="/path/to/portfolio.pdf" download
+              <a href="{{ \Storage::url($pdf->file) }}" download
                 class="block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-red-600 hover:bg-red-800 transition duration-300 ease-in-out">
                 Our Portfolio
                 <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
